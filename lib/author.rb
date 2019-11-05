@@ -3,10 +3,10 @@ class Author
   attr_accessor :name
   
   @@authors = []
-  @@post_count = 0
   
   def initialize(name)
     @name = name
+    @@authors << self
   end
   
   def add_post(post)

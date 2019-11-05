@@ -29,9 +29,8 @@ class Author
   
   
   def self.post_count
-  # binding.pry
-  # post_count = self.authors.collect{|author|author.posts}
-  # post_count.flatten.count
+   post_count = self.authors.collect{|author|author.posts}
+   post_count.flatten.count
   end
   
 end

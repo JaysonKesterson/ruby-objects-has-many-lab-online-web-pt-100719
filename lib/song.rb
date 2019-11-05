@@ -1,3 +1,4 @@
+require 'pry'
 class Song
   
   @@all = []
@@ -11,5 +12,14 @@ class Song
   def self.all
     @@all
   end
+  
+  def artist_name
+   if self.artist != nil
+     self.artist.name
+   else
+     nil
+   end
+  end
+  
   
   end

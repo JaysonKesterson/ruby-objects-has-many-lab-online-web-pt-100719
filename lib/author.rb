@@ -3,6 +3,7 @@ class Author
   attr_accessor :name
   
   @@authors = []
+  @@authors_count = 0
   
   def initialize(name)
     @name = name
